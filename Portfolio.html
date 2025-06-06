@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio.Anas</title>
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="Portfolio.css">
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1><span>Anas</span> khan</h1>
+            <p>
+                I'm working in frontend development.
+                I enjoy creating beautiful and intuitive web designs using Html css
+                and make them interactive with Javascript.
+            </p>
+
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="https://github.com/Anas8432/"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/anas-khan-172187328/"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-img">
+            <img src="frontImage.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="front2Image.avif" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p>
+                My job is to build your website so that it is functional and
+                user-friendly but at the same time attractive.
+            </p>
+            <p>
+                Moreover, I add personal touch to your product and make sure that is eye-catching and easy to use.
+                My aim is to bring across your message and identity in the most creative way.
+                I created web design for many famous brand companies.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- skills section design -->
+    <section class="skills" id="skills">
+        <h2 class="heading"><span>Skills</span></h2>
+
+        <div class="skills-container">
+            <div class="skills-box">
+                <div class="skills_names">
+                    <i class="fa-brands fa-html5 skills_icon"></i>
+                    <span class="skills_name">HTML</span>
+
+                </div>
+                <div class="skills_names">
+                    <i class="fa-brands fa-css3-alt skills_icon"></i>
+                    <span class="skills_name">CSS</span>
+
+                </div>
+
+                <div class="skills_names">
+                    <i class="fa-brands fa-js skills_icon"></i>
+                    <span class="skills_name">JAVASCRIPT</span>
+
+                </div>
+
+                <div class="skills_names">
+                    <i class="fa-brands fa-bootstrap skills_icon"></i>
+                    <span class="skills_name">Bootstrap</span>
+
+                </div>
+
+                <div class="skills_names">
+                    <i class="fa-brands fa-github skills_icon"></i>
+                    <span class="skills_name">Git and GitHub</span>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects section design -->
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="projects-container">
+            <div class="projects-box">
+                <img src="tic-tac-toe-image.avif" alt="">
+                <img src="TicTacToeCoolMathGames.jpg" alt="">
+                <div class="projects-layer">
+                    <h4>Tic Tac Toe</h4>
+                    <p>Developed an interactive Tic Tac Toe game with a clean UI and responsive layout.</p>
+                    <a href="https://anas8432.github.io/ResumeRepo/"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="projects-box">
+                <img src="portfolio-image4.png" alt="">
+                <img src="portfolio-Image3.png" alt="">
+                <div class="projects-layer">
+                    <h4>My Portfolio</h4>
+                    <p>Created a personal portfolio website to showcase skills, projects, and contact information.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="Portfolio.js"></script>
+</body>
+
+</html>
