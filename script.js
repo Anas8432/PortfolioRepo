@@ -2,10 +2,10 @@
 let menuIcon = document.querySelector('#menu-icon');
 let navbar = document.querySelector('.navbar');
 
-menuIcon.onclick = () => {
+menuIcon.addEventListener('click', () => {
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
-};
+});
 
 
 /* scroll sections active link */
@@ -18,7 +18,7 @@ window.onscroll = () => {
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
-
+        
         if(top >= offset && top < offset + height) {
             navLinks.forEach(links => {
                 links.classList.remove('active');
@@ -31,7 +31,7 @@ window.onscroll = () => {
 /* sticky navbar */
 let header = document.querySelector('.header');
 
-header.classList.toggle('sticky', window.scrollY > 30);
+header.classList.toggle('sticky', window.scrollY);
 
 
 /* remove menu icon navbar when click navbar link (scroll) */
@@ -76,6 +76,26 @@ ScrollReveal({
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img img, .skills-container, .projects-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img img, .skills-container, .projects-box, .contact form, .interships-container', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
+
+
+
+// send email 
+
+function sendEmail(){
+    Email.send({
+        SecureToken: "6874583004e1-4c45-873e-7a47ab97ead1",
+        To : 'mkanaskhan9921@gmail.com',
+        From : document.getElementById("email").value,
+        Subject : "New Contact Form Enquiry",
+        Body : "Name: " + document.getElementById('name').value
+            + "<br> Email: " + document.getElementById("email").value
+            + "<br> Phone no: " + document.getElementById("phone").value
+            + "<br> Email Subject: " + document.getElementById("subject").value
+            + "<br>  Message: " + document.getElementById("message").value
+    }).then(
+        message => alert("Message Sent Succesfully")
+    );
+}
