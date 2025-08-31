@@ -408,7 +408,7 @@ span {
 }
 
 .level div {
-    background: linear-gradient(90deg, rgb(17, 0, 255), purple);
+    background: linear-gradient(to right, rgb(17, 0, 255), purple);
     width: 80%;
     height: inherit;
     border-radius: 10px;
@@ -425,6 +425,7 @@ span {
     display: flex;
     flex-direction: column;
     align-self: self-start;
+    display: none;
 }
 
 .certificates-div {
