@@ -12,9 +12,10 @@
 }
 
 :root {
-    --bg-color: linear-gradient(90deg, black, #012933);
+    /* --bg-color: linear-gradient(90deg, black, #012933); */
+    --bg-color: linear-gradient(to left, black, #012933);
     --text-color: #ffffff;
-    --main-color: rgb(19, 212, 212);
+    --main-color: rgb(20, 202, 202);
     --white-color: #f1efef;
     --shadow-color: rgb(0, 0, 0);
 }
@@ -34,6 +35,7 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
+    overflow: hidden;
 }
 
 
@@ -281,6 +283,8 @@ span {
 
 .about-img img {
     width: 37vw;
+    margin-top: 34px;
+    margin-right: 46px;
 }
 
 .heading {
@@ -333,8 +337,11 @@ span {
 }
 
 .my-skills {
-    width: 45%;
+    width: 100%;
     align-self: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .my-skills h1,
@@ -409,47 +416,44 @@ span {
 }
 
 .my-certificate {
-    width: 50%;
-    height: auto;
+    width: 100%;
+    height: 52rem;
     display: flex;
-    flex-direction: column;
-    align-self: self-start;
-    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: auto;
 }
 
 .certificates-div {
     width: 100%;
-    height: 80rem;
+    height: 50rem;
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
-    overflow-y: auto;
-    overflow-x: hidden;
+    align-items: center;
 }
+
 
 .my-certificate .certificate {
     background: var(--bg-color);
-    border-radius: 2rem;
     box-shadow: 0 .1rem .5rem var(--shadow-color);
-    text-align: center;
     border-top: .6rem solid var(--main-color);
     border-bottom: .6rem solid var(--main-color);
     transition: .5s ease;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    height: fit-content;
 }
 
 .my-certificate .certificate:hover {
     box-shadow: 0 .1rem 2rem var(--shadow-color);
-    transform: scale(1.02);
+    transform: scale(1.05);
 }
 
 .certificate img {
+    height: 415px;
     object-fit: cover;
-    overflow: hidden;
 }
 
 
@@ -560,13 +564,10 @@ span {
 
 .certificates {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 20px;
     width: 100%;
     height: max-content;
-    margin-left: 370rem;
-    margin-right: 125rem;
 }
 
 .experience-certificate {
@@ -707,11 +708,6 @@ span {
     }
 
 
-    .certificates {
-        margin-left: 287rem;
-        margin-right: 95rem;
-    }
-
     .experience-container {
         height: 46rem;
     }
@@ -753,7 +749,7 @@ span {
         color: var(--text-color);
     }
 
-   
+
     .navbar a::before {
         display: none;
     }
@@ -840,19 +836,58 @@ span {
         font-size: 2.6vw;
     }
 
+    .my-skills {
+        grid-template-columns: 1fr;
+    }
 
+    .skills-level {
+        width: 68vw;
+    }
+
+    .certificate img {
+        height: 51vw;
+    }
+
+    .about-div {
+        flex-direction: column;
+    }
+
+    .about-img img {
+        margin: auto;
+        width: 70vw;
+    }
+
+    .projects .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills_names i {
+        font-size: 6rem;
+    }
+
+    .skills_names span {
+    font-size: 3rem;
+    }
+
+    .contact form .input-box {
+        flex-direction: column;
+    }
+
+    .contact form .input-box input  {
+        width: 100%;
+    }
 }
 
 
 @media (max-width: 500px) {
 
     .home .home-content {
-        margin-top: -40px;
+        margin-top: 215px;
     }
 
     .home-img img {
         height: 71vh;
-        margin-top: 117px;
+        margin-top: 150px;
         border-radius: 11rem;
     }
 
@@ -865,4 +900,80 @@ span {
         padding: 1rem 2rem;
     }
 
+    .certificates-div {
+        height: 33rem;
+    }
+
+    .my-certificate {
+        height: 33rem;
+    }
+
+    .home {
+        padding: 0px 9%;
+        min-height: 83vh;
+    }
+
+    .skills_names i {
+        font-size: 5rem;
+    }
+
+    .skills_names span {
+    font-size: 5vw;
+    }
+
+    .experience-certificate img {
+        height: 52vw;
+    }
+
+    .experience-container {
+        height: 35rem;
+    }
+
+    .heading {
+        font-size: 9vw;
+    }
+
+    .skills-container .skills-box {
+        width: 85%;
+    }
+
+    .skills_names {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 350px) {
+    .btn {
+        font-size: 1.4rem;
+        padding: 1rem 1.5rem;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .home-content p {
+        font-size: 4vw;
+    }
+
+    .home-img img {
+       height: 64vh;
+        margin-top: 172px;
+        border-radius: 8rem;
+    }
+
+    .heading {
+    font-size: 3rem;
+    }
+
+    .skills_names i {
+    font-size: 3rem;
+    }
+
+    .skills_names span {
+    font-size: 2rem;
+    }
+
+    .projects {
+        margin-top: -130px;
+    }
 }
