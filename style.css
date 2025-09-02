@@ -865,14 +865,14 @@ span {
     }
 
     .skills_names span {
-    font-size: 3rem;
+        font-size: 3rem;
     }
 
     .contact form .input-box {
         flex-direction: column;
     }
 
-    .contact form .input-box input  {
+    .contact form .input-box input {
         width: 100%;
     }
 }
@@ -917,7 +917,7 @@ span {
     }
 
     .skills_names span {
-    font-size: 5vw;
+        font-size: 5vw;
     }
 
     .experience-certificate img {
@@ -955,21 +955,25 @@ span {
     }
 
     .home-img img {
-       height: 64vh;
-        margin-top: 172px;
-        border-radius: 8rem;
+        height: 64vh;
+        margin-top: 120px;
+        border-radius: 0;
+    }
+
+    .home .home-content {
+        margin-top: 207px;
     }
 
     .heading {
-    font-size: 3rem;
+        font-size: 3rem;
     }
 
     .skills_names i {
-    font-size: 3rem;
+        font-size: 3rem;
     }
 
     .skills_names span {
-    font-size: 2rem;
+        font-size: 2rem;
     }
 
     .projects {
