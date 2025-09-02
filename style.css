@@ -811,7 +811,7 @@ span {
     .home-img img {
         height: 88vh;
         border-radius: 10rem;
-        margin-top: 9rem;
+        margin-top: 0;
     }
 
     .home-content h1 {
@@ -887,7 +887,7 @@ span {
     .home-img img {
         height: 57vh;
         margin-top: 130px;
-        border-radius: 11rem;
+        border-radius: 0;
     }
 
     .home-content p {
