@@ -12,7 +12,6 @@
 }
 
 :root {
-    /* --bg-color: linear-gradient(90deg, black, #012933); */
     --bg-color: linear-gradient(to left, black, #012933);
     --text-color: #ffffff;
     --main-color: rgb(20, 202, 202);
@@ -882,12 +881,12 @@ span {
 @media (max-width: 500px) {
 
     .home .home-content {
-        margin-top: 215px;
+        margin-top: 135px;
     }
 
     .home-img img {
-        height: 71vh;
-        margin-top: 150px;
+        height: 57vh;
+        margin-top: 130px;
         border-radius: 11rem;
     }
 
@@ -910,7 +909,7 @@ span {
 
     .home {
         padding: 0px 9%;
-        min-height: 83vh;
+        min-height: 72vh;
     }
 
     .skills_names i {
