@@ -809,8 +809,8 @@ span {
     }
 
     .home-img img {
-        height: 88vh;
-        border-radius: 10rem;
+        height: 100vh;
+        border-radius: 0;
         margin-top: 0;
     }
 
